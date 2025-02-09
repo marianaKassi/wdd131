@@ -3,19 +3,24 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e8f5e9; 
+    color: #2e7d32; 
   }
   
   header {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto; 
+    padding: 10px;
+    background-color: #388e3c; 
+    color: white; 
+    border-radius: 8px;
+    max-width: 600px; 
   }
   
   form {
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
+    background: #ffffff; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,6 +30,7 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+    color: #1b5e20; 
   }
   
   input[type="text"],
@@ -34,33 +40,46 @@ body {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #81c784; 
     border-radius: 4px;
+    background-color: #f1f8e9; 
+    color: #2e7d32; 
   }
   
   fieldset {
-    border: 1px solid #ccc;
+    border: 1px solid #81c784; 
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 10px;
+    background-color: #f1f8e9; 
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #1b5e20; 
   }
   
   input[type="submit"] {
-    background-color: #28a745;
+    background-color: #43a047; 
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
   }
   
   input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #388e3c; 
   }
   
   footer {
-    text-align: center;
-    margin-top: 20px;
+    text-align:center;
+    margin: 10px auto 0 auto; 
     font-size: 0.9em;
-    color: #666;
+    color: #2e7d32;
+    padding: 10px;
+    background-color: #c8e6c9; 
+    border-radius: 8px;
+    max-width: 600px; 
   }
