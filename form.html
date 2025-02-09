@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+  <main>
+    <form action="review.html" method="get">
+      <label for="product">Product Name:</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a product...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="installation-date">Installation Date:</label>
+      <input type="date" id="installation-date" name="installation-date" required>
+
+      <fieldset>
+        <legend>Useful Features:</legend>
+        <label><input type="checkbox" name="features" value="design"> Design</label>
+        <label><input type="checkbox" name="features" value="performance"> Performance</label>
+        <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label>
+        <label><input type="checkbox" name="features" value="support"> Customer Support</label>
+      </fieldset>
+
+      <label for="review">Written Review:</label>
+      <textarea id="review" name="review"></textarea>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+
+    
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+
+  <p><span id="currentyear"></span> 🌸 KASSI Ayebié Amoin Ghislaine Mariana 🌸 Ivory Coast</p>
+  <p id="lastModified">Last Modification: 08/09/2025 11:33:50</p>
+</footer>
+  
+  <script src="form.js"></script>
+</body>
+</html>
