@@ -3,101 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Côte d'Ivoire</title>
-    <link rel="stylesheet" href="Styles2.css"> <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="css/media.css"> <!-- Link to the CSS file for media queries -->
-    <script src="js/script.js" defer></script> <!-- Link to the JavaScript file -->
+    <title>Discover Côte d'Ivoire</title>
+    <meta name="description" content="Explore the culture, geography, and tourism of Côte d'Ivoire.">
+    <link rel="stylesheet" href="Pl.css">
+    <link rel="stylesheet" href="Pl-Queries.css">
 </head>
 <body>
     <header>
-        <h1>Côte d'Ivoire</h1>
+        <h1> Côte d'Ivoire</h1>
+        <nav>
+            <ul>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#geography">Geography</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#tourism">Tourism</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <main>
-        <section id="place-image">
-            <img src="Elephant.png" alt="Landscape of Côte d'Ivoire">
 
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+            <img src="Elephant.png" alt="Scenic view of Côte d'Ivoire">
+        </picture>
         
-        <section id="data">
-            <h2>Data</h2>
-            <div class="data-item">
-                <span class="label">Area:</span>
-                <span class="value">322,462 sq. km</span>
-
-            </div>
-            <div class="data-item">
-                <span class="label">Population:</span>
-                <span class="value">39.00 million</span>
-            </div>
-
-            <div class="data-item">
-                <span class="label">capital:</span>
-                <span class="value">Abidjan</span>
-
-            </div>
-            <div class="data-item">
-                <span class="label">Language:</span>
-                <span class="value">French</span>
-            </div>
-
-            <div class="data-item">
-                <span class="label">Currency:</span>
-                <span class="value">CFA Franc</span>
-
-            </div>
-            
-            <div class="data-item">
-                <span class="label">Time Zone:</span>
-                <span class="value">Greenwich Mean Time(UTC)</span>
-            </div>
-            <div class="data-item">
-                <span class="label">Calling Code:</span>
-                <span class="value">+225</span>
-
-            </div>
-            <div class="data-item">
-                <span class="label">Postal code:</span>
-                <span class="value">99326</span>    
-            </div>
-
-        </section>
-
-        <section id="weather">   
-            <h2>Weather</h2>
-            <main>
-                    <img src="Meteo1.jpg" alt="weather-item">
-
-            <div class="weather-item">  
-                <div class="data-item">
-                    <span class="label">Temperature:</span>
-                    <span class="value">35°C</span>
-    
-                </div>
-                <div class="data-item">
-                    <span class="label">Condition:</span>
-                    <span class="value">Partly Cloudy</span>
-                </div>
-                <div class="data-item">
-                    <span class="label">Wind:</span>
-                    <span class="value"> 3 km/h</span>
-    
-                </div>
-                <div class="data-item">
-                    <span class="label">Wind Chill:</span>
-                    <span class="value">24°C</span>
-                </div>
+    </section>
 
 
-                <span class="value" id="wind-chill"></span> 
-            </div>
-        </section>
-    </main>
+    <section id="data">
+        <h2>Data</h2>
+        <div class="data-item">
+            <span class="label">Area:</span>
+            <span class="value">322,462 sq. km</span>
+
+        </div>
+        <div class="data-item">
+            <span class="label">Population:</span>
+            <span class="value">39.00 million</span>
+        </div>
+
+        <div class="data-item">
+            <span class="label">capital:</span>
+            <span class="value">Abidjan</span>
+
+        </div>
+        <div class="data-item">
+            <span class="label">Language:</span>
+            <span class="value">French</span>
+        </div>
+
+        <div class="data-item">
+            <span class="label">Currency:</span>
+            <span class="value">CFA Franc</span>
+
+        </div>
+        
+        <div class="data-item">
+            <span class="label">Time Zone:</span>
+            <span class="value">Greenwich Mean Time(UTC)</span>
+        </div>
+        <div class="data-item">
+            <span class="label">Calling Code:</span>
+            <span class="value">+225</span>
+
+        </div>
+        
+
+    </section>
+
+
+
+    <!-- Weather Section -->
+    <section id="weather" class="weather">
+        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <p>Temperature: <span id="temperature">25</span>°C</p>
+        <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+        <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+    </section>
+
+    <!-- Footer -->
 
     <footer>
         <p><span id="currentyear"></span> 🌸 KASSI Ayebié Amoin Ghislaine Mariana 🌸 Ivory Coast</p>
         <p id="lastModified">Last Modification: 08/09/2025 11:33:50</p>
     </footer>
 
+    <script src="Pl.js" defer></script>
 </body>
 </html>
