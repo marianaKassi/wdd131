@@ -1,0 +1,59 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #FF8200; /* Orange */
+    --secondary-color: #009A44; /* Green */
+    --background-color: #F4F4F4;
+    --text-color: #333;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.weather {
+    padding: 20px;
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+}
