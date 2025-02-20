@@ -1,4 +1,4 @@
-document.getElementById('current-year').textContent = new Date().getFullYear();
+document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('last-modified').textContent = document.lastModified;
 
 // Calculate Wind Chill
